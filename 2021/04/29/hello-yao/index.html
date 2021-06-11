@@ -431,8 +431,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/intro/">
-                                <span class="chip bg-color">intro</span>
+                            <a href="/tags/introcuction/">
+                                <span class="chip bg-color">introcuction</span>
                             </a>
                         
                     </div>
@@ -447,7 +447,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-02-02
+                    2021-04-29
                 </div>
                 
 
@@ -468,8 +468,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-
+                <h1 id="Inflation"><a href="#Inflation" class="headerlink" title="Inflation"></a>Inflation</h1><h2 id="e-folds"><a href="#e-folds" class="headerlink" title="e-folds"></a>e-folds</h2><h1 id="CMB-physics"><a href="#CMB-physics" class="headerlink" title="CMB physics"></a>CMB physics</h1><h2 id="Boltzmann-Equation-for-photons"><a href="#Boltzmann-Equation-for-photons" class="headerlink" title="Boltzmann Equation for photons:"></a>Boltzmann Equation for photons:</h2><p>  \begin{equation}<br>  \Theta^{\prime}+i k \mu \Theta=-\Phi^{\prime}-i k \mu \Psi-\tau^{\prime}\left[\Theta_{0}-\Theta+\mu u_{\mathrm{b}}-\frac{1}{2} \mathcal{P}_{2}(\mu) \Pi\right]<br>  \end{equation}</p>
+<p>  with<br>$<br>\Pi=\Theta_{2}+\Theta_{P, 2}+\Theta_{P, 0}.<br>$</p>
+<p>We want to turn this differential equation for $\Theta(\eta, k, \mu)$ into an infinite set of coupled equations for $\Theta_{\ell}(\eta, k)$,<br>so we can see that the higher moments (\ell &gt; 1) are small and so can be negelected.</p>
+<p>  \begin{equation}<br>  \Theta_{l}<br>  \end{equation}</p>
+<p>All moments with $\ell &gt; 1$ are very small compared to the monopole and dipole. </p>
+<h2 id="Temperature-anisotropy"><a href="#Temperature-anisotropy" class="headerlink" title="Temperature anisotropy"></a>Temperature anisotropy</h2>
                 
             </div>
             <hr/>
@@ -483,8 +487,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/intro/">
-                                    <span class="chip bg-color">intro</span>
+                                <a href="/tags/introcuction/">
+                                    <span class="chip bg-color">introcuction</span>
                                 </a>
                             
                         </div>
@@ -532,7 +536,7 @@
                 <i class="far fa-dot-circle"></i>&nbsp;Current
             </div>
             <div class="card">
-                <a href="/2021/02/02/hello-yao/">
+                <a href="/2021/04/29/hello-yao/">
                     <div class="card-image">
                         
                         <img src="/medias/seashore.jpg" class="responsive-img" alt="Hello World">
@@ -548,7 +552,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-29
                             </span>
                         <span class="publish-author">
                             
@@ -562,8 +566,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/intro/">
-                        <span class="chip bg-color">intro</span>
+                    <a href="/tags/introcuction/">
+                        <span class="chip bg-color">introcuction</span>
                     </a>
                     
                 </div>
@@ -577,7 +581,7 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/01/hello-world/">
+                <a href="/2021/04/29/hello-world/">
                     <div class="card-image">
                         
                         
@@ -594,7 +598,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-29
                             </span>
                         <span class="publish-author">
                             
@@ -666,8 +670,8 @@
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            collapseDepth: Number('1'),
+            headingSelector: 'h1, h2, h3, h4'
         });
 
         // modify the toc link href to support Chinese.
@@ -679,7 +683,7 @@
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -739,6 +743,13 @@
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 
@@ -802,9 +813,9 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2020-2021</span>
             
-            <span id="year">2019</span>
+            <span id="year">2020</span>
             <a href="/about" target="_blank">Jian Yao</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
